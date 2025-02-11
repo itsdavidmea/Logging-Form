@@ -1,7 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+.container_form {
+  margin: auto;
+}
+
 #form {
   display: flex;
-  width: 410px;
+  width: 90%; /*Makes it responsive*/
+  max-width: 410px; /*Prevents from having a Overflow*/
   height: 570px;
   text-align: center;
   justify-content: center;
@@ -18,6 +23,7 @@
   text-align: center;
   top: 5%;
   height: 93px;
+  width: 100%;
 }
 #form .formlogo h1 {
   color: white;
@@ -28,19 +34,21 @@
   display: flex;
   flex-direction: column;
   width: 287px;
+  flex-wrap: wrap;
   margin-top: 30%;
+  width: 100%;
+  max-width: 80%;
 }
 #form .container b {
   float: left;
   color: white;
 }
 #form .container input[type=text], #form .container input[type=password] {
-  width: 100%;
   height: 50px;
   margin-bottom: 20px;
   background: none;
-  padding-left: 10px;
   padding: 10px;
+  padding-left: 10px;
   border: 1px solid white;
   color: white;
 }
@@ -68,6 +76,11 @@ b {
   font-family: "Inter", serif;
 }
 
+@media screen and (max-width: 760px) {
+  body {
+    background-color: white !important;
+  }
+}
 body {
   background: white;
 }/*# sourceMappingURL=main.css.map */
